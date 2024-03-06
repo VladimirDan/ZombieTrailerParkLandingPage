@@ -10,17 +10,35 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
-    margin: 0;
+    margin-right: auto; /* Заголовок выравнивается слева */
+}
+
+.quick-access {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 20px; /* Уменьшаем отступы по горизонтали */
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 5px; /* Уменьшаем отступ слева */
+    margin-right: 5px; /* Уменьшаем отступ справа */
+    transition: background-color 0.3s;
+}
+
+.quick-access:hover {
+    background-color: #0056b3;
 }
 
 h2 {
     color: #444;
 }
+
 
 section {
     padding: 20px;
@@ -30,11 +48,14 @@ section {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-img {
-    max-width: 100%;
+.image-container {
+    text-align: center; /* Выравнивание по центру */
+}
+
+.image-container img {
+    max-width: 45%; /* Уменьшаем максимальную ширину изображения */
     height: auto;
-    display: block;
-    margin: 0 auto 20px;
+    margin: 0 10px; /* Отступы между картинками */
 }
 
 ul, ol {
@@ -66,4 +87,56 @@ footer {
     header, footer {
         text-align: center;
     }
+}
+
+.review {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.review h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.review p {
+    margin-bottom: 0;
+}
+
+#review-form {
+    margin-top: 20px;
+}
+
+#review-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#review-form input,
+#review-form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#review-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#review-form button:hover {
+    background-color: #0056b3;
+}
+
+#user-reviews,
+#write-review {
+    flex: 1;
 }
