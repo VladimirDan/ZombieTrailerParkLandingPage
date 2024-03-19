@@ -19,7 +19,7 @@ header {
 h1 {
     margin: 0;
     padding-right: 20px;
-    padding-left: 40px; /* Увеличиваем отступ слева */
+    padding-left: 40px;
 }
 
 .HeaderMenu {
@@ -45,7 +45,7 @@ h1 {
 }
 
 section {
-    padding: 1px 20px 20px 20px; /* Уменьшаем верхний внутренний отступ */
+    padding: 1px 20px 20px 20px;
     margin: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -85,8 +85,8 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    margin-top: 20px; /* Добавляем отступ сверху */
-    z-index: 1; /* Устанавливаем z-index, чтобы футер находился выше других элементов */
+    margin-top: 20px;
+    z-index: 1;
 }
 
 .review {
@@ -107,9 +107,9 @@ footer {
 
 #review-form {
     margin-top: 20px;
-    margin-bottom: 10px; /* Добавляем отступ снизу */
-    max-height: 200px; /* Уменьшаем высоту формы */
-    overflow-y: auto; /* Добавляем вертикальный скролл при необходимости */
+    margin-bottom: 10px;
+    max-height: 200px;
+    overflow-y: auto;
 }
 
 #review-form label {
@@ -124,8 +124,8 @@ footer {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Учитываем padding и border в расчете ширины */
-    height: auto; /* Устанавливаем автоматическую высоту */
+    box-sizing: border-box;
+    height: auto;
 }
 
 #review-form button {
@@ -135,7 +135,7 @@ footer {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: auto; /* Изменяем ширину кнопки на автоматическую */
+    width: auto;
 }
 
 #review-form button:hover {
@@ -154,5 +154,5 @@ footer {
 }
 
 #write-review {
-    margin-bottom: 20px; /* Добавляем нижний отступ для секции отзыва */
+    margin-bottom: 20px;
 }
